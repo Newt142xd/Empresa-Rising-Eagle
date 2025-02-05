@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch de Idioma</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .lang-btn {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .lang-btn:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="lang-btn" onclick="changeLanguage()">🌍 English</button>
+
+    <h1 id="title">Bienvenido a nuestro sitio web</h1>
+    <p id="description">
+      Explora nuestros servicios y contáctanos para más información.
+    </p>
+
+    <script>
+      const translations = {
+        es: {
+          button: "🌍 English",
+          title: "Bienvenido a nuestro sitio web",
+          description:
+            "Explora nuestros servicios y contáctanos para más información.",
+        },
+        en: {
+          button: "🌍 Español",
+          title: "Welcome to our website",
+          description:
+            "Explore our services and contact us for more information.",
+        },
+      };
+
+      let currentLang = "es";
+
+      function changeLanguage() {
+        currentLang = currentLang === "es" ? "en" : "es";
+        document.getElementById("title").innerText =
+          translations[currentLang].title;
+        document.getElementById("description").innerText =
+          translations[currentLang].description;
+        document.querySelector(".lang-btn").innerText =
+          translations[currentLang].button;
+      }
+    </script>
+  </body>
+</html>

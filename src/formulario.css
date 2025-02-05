@@ -6,12 +6,10 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url(https://www.credimejora.com/hubfs/bienes-raices-para-invertir.jpg);
+  background-image: url(https://static.emol.cl/emol50/Fotos/2020/07/29/file_20200729174739.jpg);
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-size: cover;
+  background-size: 100%, 80%;
+  background-repeat: no-repeat;
 }
 
 .form-container {

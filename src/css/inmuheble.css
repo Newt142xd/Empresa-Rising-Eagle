@@ -51,14 +51,14 @@ nav ul li a {
 }
 
 nav ul li ul {
-  display: none; /* Ocultar el submenú inicialmente */
+  display: none;
   position: absolute;
-  top: 100%; /* Aparece justo debajo del elemento padre */
+  top: 100%;
   left: 0;
   border-radius: 10px;
-  border: 4px solid #11c756; /* Agregamos el borde */
-  font-size: 16px; /* Reducimos el tamaño de fuente */
-  width: 170px; /* Hacemos el submenú más estrecho */
+  border: 4px solid #11c756;
+  font-size: 16px;
+  width: 170px;
   background-color: rgb(172, 179, 176);
 }
 
@@ -66,7 +66,7 @@ nav ul li ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 27px;
   padding: 20px;
 }
 .property-card {
@@ -109,101 +109,4 @@ nav ul li ul {
   padding: 20px;
   width: 90%;
   max-width: 1200px;
-}
-
-nav ul li {
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  border-radius: 5px;
-}
-
-nav ul li a {
-  display: block;
-
-  text-decoration: none;
-  padding: 18px 15px; /* Reducimos el padding */
-  color: #030303;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-}
-
-nav ul li ul {
-  display: none; /* Ocultar el submenú inicialmente */
-  position: absolute;
-  top: 100%; /* Aparece justo debajo del elemento padre */
-  left: 0;
-  border-radius: 10px;
-  border: 4px solid #11c756; /* Agregamos el borde */
-  font-size: 16px; /* Reducimos el tamaño de fuente */
-  width: 170px; /* Hacemos el submenú más estrecho */
-  background-color: rgb(172, 179, 176);
-}
-
-.property-card1 {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.property-image1 {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.property-info1 {
-  padding: 15px;
-}
-.property-title1 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.property-location1 {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.property-details1 {
-  font-size: 14px;
-  color: #444;
-}
-
-.container2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  gap: 20px;
-  padding: 20px;
-  width: 90%;
-  max-width: 1200px;
-}
-
-.property-card2 {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.property-image2 {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.property-info2 {
-  padding: 15px;
-}
-.property-title2 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.property-location2 {
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.property-details2 {
-  font-size: 14px;
-  color: #444;
 }

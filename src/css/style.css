@@ -202,6 +202,7 @@ video {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
   background: #ff9800;
   padding: 20px;
   border-radius: 10px;
@@ -242,6 +243,7 @@ video {
   box-sizing: border-box;
   padding: 20px;
   background: #f4f4f4;
+  margin: 14px;
   border-radius: 10px;
 }
 img {
@@ -256,8 +258,10 @@ p {
 }
 .buy-btn {
   background: #ff9800;
+  position: absolute;
   color: rgb(0, 0, 0);
   border: none;
+  text-decoration: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -296,8 +300,7 @@ p {
   position: relative;
   width: 100%;
   height: 100vh; /* Ocupa toda la pantalla */
-  background: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/6b/9f/ba/entrance--v5510194.jpg?w=1200&h=-1&s=1")
-    no-repeat center center/cover;
+  background: url("../Img/1.png") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,33 +311,38 @@ p {
   position: absolute;
   top: 20%;
   left: 10%;
-
   padding: 40px;
   margin-top: -60px;
   margin-right: 30rem;
 }
 
 .content h1 {
-  color: #1c1d1c;
-  font-size: 32px;
-  width: 10%;
+  position: absolute;
+  color: #ff9800;
+  font-size: 42px;
+  width: 30rem;
+  height: 210px;
+  margin-top: -5ren;
+  margin-right: 10rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .content p {
-  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
-    -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255); /* Borde negro simulando 4 sombras */
-  color: #068a32;
-  width: 20rem;
-  margin-top: 10ox;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  position: absolute;
+  color: #ff9800;
+  width: 30rem;
+  font-size: 22px;
+  margin-right: 99rem;
+  margin-top: 167px;
+  text-align: left;
 }
 
 .button-container {
-  margin: 1orem;
+  margin: 25px;
   position: absolute;
-  bottom: 20%;
+  bottom: 30%;
+  margin-left: 10rem;
   left: 10%;
 }
 
@@ -352,4 +360,21 @@ p {
 .btn:hover {
   background: #000000;
   color: #f4f4f4;
+}
+
+#translateBtn {
+  background: none;
+  border: 2px solid #000000;
+  margin-top: 10px;
+  background-color: #ff9800;
+  margin-left: 10rem;
+  color: #000000;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#translateBtn:hover {
+  background-color: #000;
+  color: #ffffff;
 }

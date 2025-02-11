@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="css/formulario.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("nTLkRljM8Z_zqhA_L");
+      })();
+
+      async function enviarEmail(e) {
+        e.preventDefault();
+
+        try {
+          const templateParams = {
+            from_name:
+              document.getElementById("nombre").value +
+              " " +
+              document.getElementById("apellido").value,
+            from_email: document.getElementById("email").value,
+            telefono: document.getElementById("telefono").value,
+            mensaje: document.getElementById("comentario").value,
+            to_email: "risingeagle89@gmail.com",
+          };
+
+          console.log("Enviando email con parámetros:", templateParams);
+
+          const response = await emailjs.send(
+            "service_1269od1",
+            "template_1clv726",
+            templateParams
+          );
+          console.log("Email enviado:", response);
+          alert("¡Mensaje enviado con éxito!");
+          document.querySelector("form").reset();
+        } catch (error) {
+          console.error("Error completo:", error);
+          alert("Error al enviar el mensaje: " + error.text);
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="form-container">
       <h2>Contacto</h2>
-      <form action="#" method="post">
+      <form onsubmit="enviarEmail(event)">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
 
@@ -33,5 +70,6 @@
         <button type="submit">Enviar</button>
       </form>
     </div>
+     
   </body>
 </html>
